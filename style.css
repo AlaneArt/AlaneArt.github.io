@@ -68,7 +68,10 @@ body {
 .hero {
   height: 100vh;
 
-  background-image:
+  background-image:linear-gradient(
+    rgba(255,255,255,0.15),
+    rgba(255,255,255,0.15)
+  ),
   url("images/PXL_20260501_145922232.jpg");
 
   background-size: cover;
