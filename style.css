@@ -174,5 +174,23 @@ footer {
   .gallery-section {
     padding: 90px 8%;
   }
+  
+/* GALLERY LABELS */
 
+.gallery-subtitle {
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin: 40px 0 20px;
+  text-align: left;
+}
+
+.gallery-subtitle.sold {
+  margin-top: 80px;
+  opacity: 0.6;
+}
+
+/* OPTIONAL: SOLD VISUAL STYLE */
+.sold-grid img {
+  filter: grayscale(10%);
+}
 }
