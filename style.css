@@ -1,58 +1,178 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  font-family: Georgia, serif;
-  background: white;
+  background: #ffffff;
   color: #222;
+  font-family: Georgia, serif;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 60px;
-  position: sticky;
+/* MENU BUTTON */
+
+.menu-button {
+  position: fixed;
+  top: 28px;
+  left: 28px;
+  z-index: 1001;
+  cursor: pointer;
+}
+
+.menu-button span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #222;
+  margin: 5px 0;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
   top: 0;
+  left: 0;
   background: white;
+  overflow-x: hidden;
+  transition: 0.4s;
+  padding-top: 100px;
+  box-shadow: 2px 0 20px rgba(0,0,0,0.08);
 }
 
-nav a {
-  margin-left: 20px;
+.sidebar a {
+  display: block;
+  padding: 18px 40px;
   text-decoration: none;
   color: #222;
+  font-size: 1.1rem;
+  transition: 0.2s;
 }
+
+.sidebar a:hover {
+  opacity: 0.5;
+}
+
+.closebtn {
+  position: absolute;
+  top: 18px;
+  right: 28px;
+  font-size: 2rem;
+}
+
+/* HERO */
 
 .hero {
-  height: 70vh;
+  height: 100vh;
+
+  background-image:
+  linear-gradient(
+    rgba(255,255,255,0.15),
+    rgba(255,255,255,0.15)
+  ),
+  url("images/painting1.jpg");
+
+  background-size: cover;
+  background-position: center;
+
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 60px;
+  align-items: center;
+  padding-left: 10%;
 }
 
-.hero h2 {
-  font-size: 3rem;
+.hero-text {
+  max-width: 500px;
+}
+
+.hero h1 {
+  font-size: 4rem;
   font-weight: normal;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
 }
 
-.gallery {
+.hero p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* CONTENT */
+
+.content-section {
+  padding: 120px 12%;
+  max-width: 850px;
+}
+
+.content-section h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.content-section p {
+  line-height: 1.9;
+  font-size: 1.05rem;
+}
+
+/* GALLERY */
+
+.gallery-section {
+  padding: 120px 8%;
+}
+
+.gallery-section h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+
+.gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-  gap: 20px;
-  padding: 40px;
+
+  grid-template-columns:
+  repeat(auto-fit, minmax(320px, 1fr));
+
+  gap: 28px;
 }
 
-.gallery img {
+.gallery-grid img {
   width: 100%;
   display: block;
+  transition: 0.35s;
 }
 
-.about,
-.contact {
-  padding: 60px;
-  max-width: 700px;
+.gallery-grid img:hover {
+  transform: scale(1.01);
+  opacity: 0.94;
 }
+
+/* FOOTER */
 
 footer {
-  padding: 40px;
   text-align: center;
-  color: #888;
+  padding: 80px 20px;
+  color: #777;
+  font-size: 0.95rem;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .hero {
+    padding: 0 8%;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .content-section,
+  .gallery-section {
+    padding: 90px 8%;
+  }
+
 }
