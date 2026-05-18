@@ -68,10 +68,10 @@ body {
 .hero {
   height: 100vh;
 
-  background-image:linear-gradient(
+  background-image: /*linear-gradient(
     rgba(255,255,255,0.15),
     rgba(255,255,255,0.15)
-  ),
+  ),*/
   url("images/PXL_20260501_145922232.jpg");
 
   background-size: cover;
@@ -82,15 +82,16 @@ body {
   padding-left: 10%;
 }
 
-.hero-text {
-  max-width: 500px;
+.hero-text-below {
+  padding: 80px 10%; /* max-width: 500px*/
+  text-align: left;
 }
 
 .hero h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: normal;
-  letter-spacing: 3px;
-  margin-bottom: 20px;
+  /*letter-spacing: 3px;
+  margin-bottom: 20px;*/
 }
 
 .hero p {
