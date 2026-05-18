@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alane Art</title>
+  <title>Alane Art | Home</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -12,7 +12,6 @@
 <body>
 
 <!-- MENU BUTTON -->
-
 <div class="menu-button" onclick="openMenu()">
   <span></span>
   <span></span>
@@ -20,100 +19,42 @@
 </div>
 
 <!-- SIDEBAR -->
-
 <div id="sidebar" class="sidebar">
 
-  <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">
-    ×
-  </a>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">×</a>
 
-  <a href="#home" onclick="closeMenu()">Home</a>
-  <a href="#about" onclick="closeMenu()">About</a>
-  <a href="#gallery" onclick="closeMenu()">Gallery</a>
-  <a href="#contact" onclick="closeMenu()">Contact</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
 
 </div>
 
 <!-- HERO -->
+<section class="hero"></section>
 
-<section id="home" class="hero"></section>
+<section class="hero-text-below">
 
-  <section class="hero-text-below">
-
-    <h1>ALANE ENYART: ART FROM THE HEART</h1>
-
-    <p>
-      Abstract paintings inspired by flowing color,
-      memory, silence, and organic movement.
-    </p>
-
-  </section>
-
-<!-- ABOUT -->
-
-<section id="about" class="content-section">
-
-  <h2>About</h2>
+  <h1>ALANE ENYART: ART FROM THE HEART</h1>
 
   <p>
-    My paintings emerge from layered acrylic motion,
-    shifting textures, and accidental forms resembling
-    leaves, water, and imagined botanical structures.
+    Abstract paintings inspired by flowing color,
+    memory, silence, and organic movement.
   </p>
 
 </section>
-
-<!-- GALLERY -->
-
-<section id="gallery" class="gallery-section">
-
-  <h2>Gallery</h2>
-
-  <div class="gallery-grid">
-
-    <img src="images/painting1.jpg" alt="">
-    <img src="images/painting2.jpg" alt="">
-    <img src="images/painting3.jpg" alt="">
-    <img src="images/painting4.jpg" alt="">
-    <img src="images/painting5.jpg" alt="">
-    <img src="images/painting6.jpg" alt="">
-
-  </div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section id="contact" class="content-section">
-
-  <h2>Contact</h2>
-
-  <p>
-    To purchase paintings or ask questions:
-  </p>
-
-  <p>
-    your@email.com
-  </p>
-
-</section>
-
-<!-- FOOTER -->
 
 <footer>
   © 2026 Alane Art
 </footer>
 
 <script>
-
 function openMenu() {
   document.getElementById("sidebar").style.width = "260px";
 }
-
 function closeMenu() {
   document.getElementById("sidebar").style.width = "0";
 }
-
 </script>
 
 </body>
